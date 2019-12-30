@@ -43,7 +43,7 @@ function gst::install {
     messages_info "Installing ${gst_package_name}"
     case "${OSTYPE}" in
     darwin*)
-        gst::install:osx
+        gst::install::osx
         ;;
     linux*)
         gst::install::linux
