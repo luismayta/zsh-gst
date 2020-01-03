@@ -13,6 +13,7 @@
 #
 #
 #
+
 gst_package_name=gst
 GST_PATH_BIN=/usr/local/bin
 GST_BIN="${GST_PATH_BIN}/${gst_package_name}"
@@ -55,6 +56,14 @@ function gst::install {
 function gst::post_install {
     message_info "Post Install $gst_package_name"
     message_success "Success Install $gst_package_name"
+}
+
+# Wrapper for gst new
+function gst::new {
+    gst new "${1}"
+    if type -p ghq > /dev/null; then
+        ghq::cache::clear > /dev/null
+    fi
 }
 
 # load dependences
