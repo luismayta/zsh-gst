@@ -25,6 +25,7 @@ Dependencies
     https://github.com/mafredri/zsh-async
     https://github.com/marzocchi/zsh-notify
     https://github.com/luismayta/zsh-functions
+    https://github.com/luismayta/zsh-ghq
 
 Installation
 ------------
@@ -37,12 +38,21 @@ If you're using
 plugin by doing the following:
 
 1. Go to your oh-my-zsh custom plugins directory -
-    ``cd ~/.oh-my-zsh/custom/plugins``
+
+    .. code-block:: bash
+
+        cd ~/.oh-my-zsh/custom/plugins
+
 2. Clone the plugin
-    ``bash   git clone https://github.com/luismayta/zsh-gst``\ bash
+
+    .. code-block:: bash
+
+        git clone https://github.com/luismayta/zsh-gst
+
 3. Edit your ``.zshrc`` and add
     ``plugins=( ... zsh-gst )`` to your list of
     plugins
+
 4. Open a new terminal and enjoy!
 
 `antigen <https://github.com/zsh-users/antigen>`__ users
@@ -64,20 +74,18 @@ install this plugin by doing the following:
 If you're using `Antigen <https://github.com/getantibody/antibody>`__,
 install this plugin by doing the following:
 
-1. Add :
+1. Add to your ``.zshrc`` where you're adding your other plugins::
 
-    .. code-block:: bash
+    antibody bundle luismayta/zsh-gst
 
-        antibody bundle luismayta/zsh-gst
-
-    to your ``.zshrc`` where you're adding your other plugins.
 2. Either open a new terminal to force zsh to load the new plugin, or
     run ``antibody bundle luismayta/zsh-gst`` in a
     running zsh session.
 3. Enjoy!
 
+
 Quick Start
-===========
+-----------
 
 - Fork this repository
 
