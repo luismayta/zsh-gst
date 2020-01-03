@@ -34,7 +34,7 @@ function gst::dependences::install {
 
 function gst::dependences::checked {
     if ! type -p curl > /dev/null; then
-      messages_error "Please install curl for  ${gst_package_name}"
+        messages_error "Please install curl for  ${gst_package_name}"
     fi
 }
 
@@ -47,7 +47,7 @@ function gst::install {
         ;;
     linux*)
         gst::install::linux
-      ;;
+    ;;
     esac
     messages_success "${gst_package_name} Installed"
 }
