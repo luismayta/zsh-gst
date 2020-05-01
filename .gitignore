@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/code,python,golang,node
-# Edit at https://www.gitignore.io/?templates=code,python,golang,node
+# Created by https://www.gitignore.io/api/code,python,golang,node,code
+# Edit at https://www.gitignore.io/?templates=code,python,golang,node,code
 
 ### Code ###
 .vscode/*
@@ -89,6 +89,18 @@ typings/
 # nuxt.js build output
 .nuxt
 
+# rollup.js default build output
+dist/
+
+# Uncomment the public line if your project uses Gatsby
+# https://nextjs.org/blog/next-9-1#public-directory-support
+# https://create-react-app.dev/docs/using-the-public-folder/#docsNav
+# public
+
+# Storybook build outputs
+.out
+.storybook-out
+
 # vuepress build output
 .vuepress/dist
 
@@ -100,6 +112,10 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# Temporary folders
+tmp/
+temp/
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -114,10 +130,10 @@ __pycache__/
 .Python
 build/
 develop-eggs/
-dist/
 downloads/
 eggs/
 .eggs/
+lib/
 lib64/
 parts/
 sdist/
@@ -204,4 +220,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# End of https://www.gitignore.io/api/code,python,golang,node
+# End of https://www.gitignore.io/api/code,python,golang,node,code
