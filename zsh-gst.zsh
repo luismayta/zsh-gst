@@ -36,6 +36,7 @@ function gst::dependences::install {
 function gst::dependences::checked {
     if ! type -p curl > /dev/null; then
         messages_error "Please install curl for  ${gst_package_name}"
+        return
     fi
 }
 
@@ -68,7 +69,7 @@ function gst::new {
 
 # load dependences
 function gst::load {
-    path_append "${GST_PATH_BIN}"
+    [ -e "${GST_PATH_BIN}" ] && export PATH="${PATH}:${GST_PATH_BIN}"
 }
 
 gst::load
