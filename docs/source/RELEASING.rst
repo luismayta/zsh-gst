@@ -43,15 +43,5 @@ Make a new version of zsh-gst in the following steps:
 
 See the bumpversion_ documentation for details.
 
-Deploy Release
---------------
-
-Make a deploy to aws s3 Do the following steps:
-
-.. code-block:: sh
-
-    $ make yarn command=build
-    $ make aws.deploy
-
 .. _bumpversion: https://pypi.org/project/bumpversion/
 .. _pytest: https://docs.pytest.org/en/latest/

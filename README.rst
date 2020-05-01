@@ -3,6 +3,8 @@ zsh-gst
 
 Plugin zsh for gst
 
+|Build Status| |GitHub issues| |GitHub license|
+
 :Version: 0.0.0
 :Web: https://github.com/luismayta/zsh-gst
 :Download: https://github.com/luismayta/zsh-gst
@@ -23,7 +25,7 @@ Dependencies
 .. code-block:: bash
 
     https://github.com/mafredri/zsh-async
-    https://github.com/marzocchi/zsh-notify
+    https://github.com/luismayta/zsh-notify
     https://github.com/luismayta/zsh-functions
     https://github.com/luismayta/zsh-ghq
 
@@ -52,7 +54,6 @@ plugin by doing the following:
 3. Edit your ``.zshrc`` and add
     ``plugins=( ... zsh-gst )`` to your list of
     plugins
-
 4. Open a new terminal and enjoy!
 
 `antigen <https://github.com/zsh-users/antigen>`__ users
@@ -83,9 +84,8 @@ install this plugin by doing the following:
     running zsh session.
 3. Enjoy!
 
-
 Quick Start
------------
+===========
 
 - Fork this repository
 
@@ -96,7 +96,7 @@ Usage
 
 .. code-block:: bash
 
-    λ make setup
+  λ make setup
 
 Support
 -------
@@ -182,7 +182,7 @@ Made with :coffee: and :pizza: by `Luis Mayta`_ and `equipindustry`_.
 
 .. Team:
 .. |Luis Mayta| image:: https://github.com/luismayta.png?size=100
-    :target: https://github.com/luismayta
+   :target: https://github.com/luismayta
 
 .. Footer:
 .. |linkedin| image:: http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png
@@ -190,7 +190,7 @@ Made with :coffee: and :pizza: by `Luis Mayta`_ and `equipindustry`_.
 .. |beacon| image:: https://ga-beacon.appspot.com/UA-65019326-1/github.com/luismayta/zsh-gst/readme
     :target: https://github.com/luismayta/zsh-gst
 .. |made| image:: https://img.shields.io/badge/Made%20with-Zsh-1f425f.svg
-    :target: http://www.zsh.org
+   :target: http://www.zsh.org
 
 .. Dependences:
 

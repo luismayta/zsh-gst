@@ -4,7 +4,7 @@ Authors
 Leads
 =====
 
-- Luis Mayta slovacus@gmail.com
+- Luis Mayta `@slovacus <https://github.com/luismayta>`_
 
 Contributors (chronological)
 ============================
