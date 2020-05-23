@@ -15,34 +15,39 @@
 #
 
 gst_package_name=gst
-GST_PATH_BIN=/usr/local/bin
+GST_DOWNLOAD_URL="https://github.com/uetchy/gst/releases/download"
+
+GST_VERSION="v5.0.3"
+GST_OSX="gst_darwin_amd64"
+GST_LINUX="gst_darwin_amd64"
+GST_PATH_BIN="${HOME}/bin"
 GST_BIN="${GST_PATH_BIN}/${gst_package_name}"
 
 function gst::install::osx {
-    curl -L https://github.com/uetchy/gst/releases/download/v5.0.1/gst_darwin_amd64 > "${GST_BIN}"
+    curl -L "${GST_DOWNLOAD_URL}/${GST_VERSION}/${GST_OSX}" > "${GST_BIN}"
     chmod +x "${GST_BIN}"
 }
 
 function gst::install::linux {
-    curl -L https://github.com/uetchy/gst/releases/download/v5.0.1/gst_linux_amd64 > "${GST_BIN}"
+    curl -L "${GST_DOWNLOAD_URL}/${GST_VERSION}/${GST_LINUX}" > "${GST_BIN}"
     chmod +x "${GST_BIN}"
 }
 
 function gst::dependences::install {
-    messages_info "Installing Dependences for ${gst_package_name}"
-    messages_success "${gst_package_name} Dependences Installed"
+    message_info "Installing Dependences for ${gst_package_name}"
+    message_success "${gst_package_name} Dependences Installed"
 }
 
 function gst::dependences::checked {
     if ! type -p curl > /dev/null; then
-        messages_error "Please install curl for  ${gst_package_name}"
+        message_error "Please install curl for  ${gst_package_name}"
         return
     fi
 }
 
 function gst::install {
     gst::dependences::checked
-    messages_info "Installing ${gst_package_name}"
+    message_info "Installing ${gst_package_name}"
     case "${OSTYPE}" in
     darwin*)
         gst::install::osx
@@ -51,7 +56,7 @@ function gst::install {
         gst::install::linux
     ;;
     esac
-    messages_success "${gst_package_name} Installed"
+    message_success "${gst_package_name} Installed"
 }
 
 function gst::post_install {
