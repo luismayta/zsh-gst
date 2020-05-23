@@ -59,7 +59,7 @@ repos:
         files: ^(?!\.?git-crypt)
       - id: check-merge-conflict
       - id: trailing-whitespace
-        files: ^tf|-|\.(py|tfvars|tf|tfenv|env|yml|yaml|pem|key|mock)$
+        files: ^tf|-|\.(py|tfvars|tf|gst|env|yml|yaml|pem|key|mock)$
       - id: end-of-file-fixer
         files: ^tf|-|\.(py|env|yml|yaml|pem|key|mock)$
       - id: check-added-large-files
@@ -72,7 +72,6 @@ repos:
       - id: check-ast
       - id: debug-statements
       - id: check-docstring-first
-      - id: detect-aws-credentials
       - id: requirements-txt-fixer
       - id: check-symlinks
       - id: name-tests-test
