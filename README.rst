@@ -1,11 +1,11 @@
 zsh-gst
-=======
-
-Plugin zsh for gst
+=========
 
 |Build Status| |GitHub issues| |GitHub license|
 
-:Version: 0.0.0
+zsh-gst for zsh
+
+:Version: 0.1.0
 :Web: https://github.com/luismayta/zsh-gst
 :Download: https://github.com/luismayta/zsh-gst
 :Source: https://github.com/luismayta/zsh-gst
@@ -25,6 +25,7 @@ Dependencies
 .. code-block:: bash
 
     https://github.com/mafredri/zsh-async
+    https://github.com/luismayta/zsh-core
     https://github.com/luismayta/zsh-notify
     https://github.com/luismayta/zsh-functions
     https://github.com/luismayta/zsh-ghq
@@ -164,7 +165,7 @@ Made with :coffee: and :pizza: by `Luis Mayta`_ and `equipindustry`_.
 
 
 .. _`Github`: https://github.com/luismayta
-.. _`Linkedin`: https://www.linkedin.com/in/luismayta
+.. _`Linkedin`: https://pe.linkedin.com/in/luismayta
 .. _`Email`: slovacus@gmail.com
     :target: mailto:slovacus@gmail.com
 .. _`Twitter`: https://twitter.com/slovacus
@@ -186,7 +187,7 @@ Made with :coffee: and :pizza: by `Luis Mayta`_ and `equipindustry`_.
 
 .. Footer:
 .. |linkedin| image:: http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png
-    :target: https://www.linkedin.com/in/luismayta
+    :target: https://pe.linkedin.com/in/luismayta
 .. |beacon| image:: https://ga-beacon.appspot.com/UA-65019326-1/github.com/luismayta/zsh-gst/readme
     :target: https://github.com/luismayta/zsh-gst
 .. |made| image:: https://img.shields.io/badge/Made%20with-Zsh-1f425f.svg
