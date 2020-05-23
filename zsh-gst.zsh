@@ -33,12 +33,22 @@ function gst::install::linux {
     chmod +x "${GST_BIN}"
 }
 
+function gst::upgrade {
+    message_info "Upgrade ${gst_package_name}"
+    if [ -e "${GST_BIN}" ]; then
+        rm -rf "${GST_BIN}"
+    fi
+    gst::install
+    message_info "Upgraded ${gst_package_name}"
+}
+
 function gst::dependences::install {
     message_info "Installing Dependences for ${gst_package_name}"
     message_success "${gst_package_name} Dependences Installed"
 }
 
 function gst::dependences::checked {
+    mkdir -p "${GST_PATH_BIN}"
     if ! type -p curl > /dev/null; then
         message_error "Please install curl for  ${gst_package_name}"
         return
