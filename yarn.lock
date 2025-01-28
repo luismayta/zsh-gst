@@ -11,7 +11,7 @@
     js-tokens "^4.0.0"
     picocolors "^1.0.0"
 
-"@babel/eslint-parser@^7.11.0":
+"@babel/eslint-parser@^7.26.5":
   version "7.26.5"
   resolved "https://registry.yarnpkg.com/@babel/eslint-parser/-/eslint-parser-7.26.5.tgz#aa669f4d873f9cd617050cf3c40c19cd96307efb"
   integrity sha512-Kkm8C8uxI842AwQADxl0GbcG1rupELYLShazYEZO/2DYjhyWXJIOUVOE3tBYm6JXzUCNJOZEzqc4rCW/jsEQYQ==
